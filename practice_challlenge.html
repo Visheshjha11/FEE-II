@@ -1,0 +1,55 @@
+<!-- name (only letter, min 3), email(valid format, required), age(between 8-60), phone 10digit -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <div class="form">
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z]{3,}">
+        <span class="error" id="nameError"></span><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="8" max="60" required>
+        <span class="error" id="ageError"></span><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <span class="error" id="genderError"></span><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+        <span class="error" id="phoneError"></span><br><br>
+
+        <label for="Password">Password:</label>
+        <input type="Password" id="Password" name="Password" min="6" max="12" required>
+        <span class="error" id="passwordError"></span><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="Password" id="confirmPassword" name="confirmPassword" min="6" max="12" required>
+        <span class="error" id="confirmPasswordError"></span><br><br>
+
+        
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <script >
+
+    </script>
+    
+</body>
+</html>
