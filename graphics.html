@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Document</title>
+   <style>
+     body {
+       font-family: Arial, sans-serif;
+       margin: 1rem;
+       max-width: none;
+       padding: 1rem;
+     }
+
+     section {
+       margin-bottom: 2rem;
+     }
+
+     svg {
+       width: 100%;
+       height: auto;
+       max-width: 300px; 
+       display: block;
+       margin: 0;
+     }
+
+     img {
+       max-width: 100%;
+       height: auto;
+       display: block;
+       margin: 0;
+     }
+
+     .iframe-container {
+       position: relative;
+       width: 100%;
+       padding-bottom: 56.25%;
+       height: 0;
+       overflow: hidden;
+       max-width: 560px; 
+       margin: 0; 
+     }
+     .iframe-container iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       border: 0;
+     }
+
+     pre {
+       background: #f4f4f4;
+       padding: 1rem;
+       overflow-x: auto;
+       border-radius: 5px;
+       max-width: 600px;
+     }
+   </style>
+</head>
+<body>
+   <h1>Graphics Shapes</h1>
+   <section>
+       <h2>Circle</h2>
+       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Circle shape">
+           <circle cx="100" cy="100" r="80" fill="yellow" stroke="black" stroke-width="2"/>
+       </svg>
+   </section>
+
+   <section>
+       <h2>Rectangle</h2>
+       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Rectangle shape">
+           <rect x="20" y="20" width="160" height="100" fill="lightblue" stroke="black" stroke-width="2"/>
+       </svg>
+   </section>
+
+   <section>
+       <h2>Ellipse</h2>
+       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ellipse shape">
+           <ellipse cx="100" cy="100" rx="80" ry="40" fill="green" stroke="black" stroke-width="2"/>
+       </svg>
+   </section>
+
+   <section>
+       <h2>Line</h2>
+       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Line shape">
+           <line x1="20" y1="20" x2="180" y2="180" stroke="red" stroke-width="2"/>
+       </svg>
+   </section>
+
+   <section>
+       <h2>Polygon</h2><!-- 8 sided -->
+       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Polygon shape">
+           <polygon points="100,10 40,180 190,60 10,60 160,180 100,10" fill="purple" stroke="black" stroke-width="2"/>
+       </svg>
+   </section>
+
+   <section>
+       <h2>Static Image</h2>
+       <img src="html.png" alt="Static Image" />
+   </section>
+
+   <section>
+       <h2>Html entities</h2>
+       <ul>
+           <li>&amp; - Ampersand</li>
+           <li>&lt; - Less than</li>
+           <li>&gt; - Greater than</li>
+           <li>&quot; - Double quote</li>
+           <li>&#39; - Single quote</li>
+       </ul>
+   </section>
+
+   <section>
+     <h2>Iframe</h2>
+     <div class="iframe-container">
+       <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Example Iframe" allowfullscreen></iframe>
+     </div>
+   </section>
+
+   <section>
+       <h2>Preformatted Code</h2>
+       <pre>
+<code>&lt;html&gt;
+&lt;head&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</code>
+       </pre>
+   </section>
+</body>
+</html>
