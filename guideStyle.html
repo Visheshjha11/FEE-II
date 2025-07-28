@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guideStyle.html</title>
+    <!--responsive-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1rem;
+            max-width: none;
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+        }   
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1. Emojis in HTML</h2>
+        <p>Direct Emoji Example: 😂😂😂😂😂 </p>
+        <p>Another Emoji: 😊</p>
+        <p>Using Unicode Entity: &#128077; &#128522;</p>
+        <p>We 😊 HTML & CSS!</p>
+    </section>
+
+    <section>
+        <strong>
+            <h2>2. ASCII Values Table</h2>
+        </strong>
+    <table border="1px solid black" style="text-align: center;">
+
+        <tr>
+            <th>Character</th>
+            <th>ASCII Value</th>
+        </tr>
+        <tr>
+            <td>Space</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>48</td>
+        </tr>
+        <tr>
+            <td>@</td>
+            <td>64</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>65</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>97</td>
+        </tr>
+    </table>
+    </section>
+    
+    <section>
+    <strong>
+        <h2>3. URL Encoding Example</h2>
+    </strong>
+    <p>Sometimes URLs contain characters that need to be encoded.</p>
+    <p>Original URL:</p>
+    <p>https://example.com/search?query=html & css</p>
+
+    <p>Encoded URL:</p>
+    <p>https://example.com/search?query=html%20%26%20css</p>
+    <p>Some common encoded characters:</p>
+    <ul>
+        <li>Space -> %20</li>
+        <li>& -> %26</li>
+        <li>= -> %3D</li>
+        <li>? -> %3F</li>
+    </ul>
+    </section>
+
+    <section>
+    <h2>4. Guide Style (HTML Best Practices)</h2>
+    <h3>Messy HTML:</h3>
+    <pre>
+&lt;DIV&gt;&lt;IMG src=cat.jpg&gt;&lt;h1&gt;Welcome&lt;/h1&gt;&lt;/DIV&gt;
+    </pre>
+    <h3>Fixed html</h3>
+    <pre>
+&lt;div&gt;
+    &lt;img src="cat.jpg" alt="A cute cat"&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+&lt;/div&gt;
+    </pre>
+</section>
+</body>
+
+</html>
