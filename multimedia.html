@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia in HTML</title>
+</head>
+<body>
+    <h1>Multimedia in HTML</h1>
+    <h2>1. Video Controls</h2>
+    <!-- Embedded YouTube video using iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <!--Audio Controls-->
+    <h2>2. Audio Controls</h2>
+    <audio controls>
+        <source src="gone.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <!--Embeded Example-->
+    <h2>3. Embed Example</h2>
+    <embed src="finance-1.pdf" type="application/pdf" width="600" height="400">
+
+    <!--Object Example-->
+    <h2>4. Object Example</h2>
+    <object data="finance-1.pdf" type="application/pdf" width="600" height="400">
+        <p>Your browser does not support PDF viewing. Please download the PDF file <a href="finance-1.pdf" target="_blank">here</a>.</p> 
+    </object>
+    <object data="finance-.pdf" type="application/pdf" width="600" height="400">
+        <p>Your browser does not support PDF viewing. Please download the PDF file <a href="finance-1.pdf" target="_blank">here</a>.</p> 
+    </object>
+    <!--Caption in video-->
+    <h2>7. Video With Captions</h2>
+    <video controls width="600" height="400">
+        <source src="fast.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English" default>
+        <track src="subtitles.vtt" kind="subtitles" srclang="hi" label="Hindi">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
