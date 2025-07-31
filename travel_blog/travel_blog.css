@@ -1,0 +1,114 @@
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.navigation{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.navigation ul li {
+    margin: 0 1rem;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: #083dc4;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+table, tr {
+    border-collapse: collapse;
+    height: 30px;
+    text-align: center;
+
+}
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.Intro {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin : 3rem;
+    margin-left : 15rem;
+
+
+}
+.Intro img{
+    border-radius: 10px;
+    margin-left: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.travel-form {
+    background: #f7faff;
+    padding: 2.5rem 2rem;
+    border-radius: 40px;
+    box-shadow: 0 6px 24px rgba(8, 61, 196, 0.08);
+    max-width: 420px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.travel-form label {
+    font-weight: 600;
+    color: #083dc4;
+    margin-bottom: 0.3rem;
+    display: block;
+    letter-spacing: 0.02em;
+}
+
+.travel-form input,
+.travel-form select,
+.travel-form textarea {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #b6c6e3;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+    margin-bottom: 0.5rem;
+}
+
+.latest-trip {
+    background: #f7faff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(8, 61, 196, 0.08);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+.travel-quote {
+    background: linear-gradient(120deg, #f7faff 60%, #e0f7fa 100%);
+    padding: 2rem 2.5rem;
+    border-radius: 28px;
+    margin: 2.5rem auto;
+    max-width: 650px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem;
+    border: 1.5px solid #b6c6e3;
+}

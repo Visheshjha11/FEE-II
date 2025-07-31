@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../temp/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="travel_blog.css">
+    <title>My Travel blog</title>
+</head>
+
+<body>
+    <title>My Travel Blog</title>
+    <!--website cool travel name-->
+    <div class="navigation">
+        <h1>Wanderlust Chronicles</h1>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#destinations">Top Destinations</a></li>
+                    <li><a href="#gallery">Photo Gallery</a></li>
+                    <li><a href="#blog">Blog Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <hr>
+
+
+    <h2>Welcome to My Travel Blog</h2>
+    <div class="Intro">
+
+
+        <p>Join me as I explore the world, one destination at a time!
+            Traveling is not just about the destination, but the journey itself. Through this blog, I aim to inspire
+            others to explore new places and cultures.</p>
+            <img src="../temp/person-traveling-enjoying-their-vacation.jpg" alt="Beautiful landscape"
+            style="width:400px; height:250px;">
+    </div>
+    
+        
+
+
+    <h2>Top 3 Travel Destinations</h2><!--country,best time to visit, language, image, use<table>-->
+    <table border="1" style="width:50%; border-collapse: collapse;">
+        <tr>
+            <th>Country</th>
+            <th>Best Time to Visit</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>March to May</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>April to June</td>
+            <td>Italian</td>
+        </tr>
+        <tr>
+            <td>New Zealand</td>
+            <td>September to November</td>
+            <td>English</td>
+        </tr>
+    </table>
+
+    <div class="travel-quote">
+        <section>
+            <h2>Travel Quote</h2>
+            <blockquote>
+                "The world is a book, and those who do not travel read only one page." - Saint Augustine
+            </blockquote>
+        </section>
+    </div>
+    <div class="latest-trip">
+        <section>
+            <h2>Latest Trip Video</h2>
+            <video width="560" height="315" controls>
+                <source src="../temp/Norway_Aurora_Exploration_Video.mp4" type="video/mp4">
+                <track label="English" kind="subtitles" srclang="en" src="temp/subtitles_blog" default>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </div>
+
+
+
+    <div class="travel-form">
+        <section>
+            <h2>Travel Form</h2>
+            <form action="../submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="destination">Destination of Interest:</label>
+                <select id="destination" name="destination">
+                    <option value="japan">Japan</option>
+                    <option value="italy">Italy</option>
+                    <option value="new_zealand">New Zealand</option>
+                </select>
+
+                <fieldset>
+                    <legend>Type of Traveler:</legend>
+                    <input type="checkbox" id="adventurous" name="traveler_type[]" value="adventurous">
+                    <label for="adventurous">Adventurous</label><br>
+                    <input type="checkbox" id="relaxed" name="traveler_type[]" value="relaxed">
+                    <label for="relaxed">Relaxed</label><br>
+                    <input type="checkbox" id="cultural" name="traveler_type[]" value="cultural">
+                    <label for="cultural">Cultural</label><br>
+                </fieldset>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </div>
+
+
+
+    
+</body>
+
+</html>
