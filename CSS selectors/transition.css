@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    padding: 60px;
+}
+
+
+.box{
+    display: flex;
+    background-color: aqua;
+    color: black;
+    padding: 40px;
+    border: 2px solid black;
+    transition: all;
+    transition-duration: 2s;
+}
+
+.box:hover{
+    background-color: blueviolet;
+    color: white;
+    font-size: large;
+    transition-duration: 2s;
+    transition-timing-function: steps(5);
+    transition: all;
+    transition-property: all;
+    transition-delay: 1s;
+
+    
+}
+
+.box:active{
+    background-color: chartreuse;
+    color: red;
+}
