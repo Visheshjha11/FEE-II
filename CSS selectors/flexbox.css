@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    margin: 20px;
+    padding: 40px;
+    width: auto;
+}
+
+.box{
+    display: flex;
+    width: 50px ;
+    padding: 60px;
+    border: 2px solid black;
+    flex-direction: column;
+    margin: auto;
+}
+
+#box1{
+    background-color: rgb(255, 162, 0);
+}
+
+#box2{
+    background-color: rgb(19, 2, 255);
+}
+
+#box3{
+    background-color: rgb(1, 255, 77)
+}
+
+#box4{
+    background-color:rgb(255, 192, 254);
+}
+
+#box5{
+    background-color: rgb(107, 128, 0);
+}
